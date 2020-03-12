@@ -364,10 +364,20 @@ function carMaker(num) {
   return {
     odometer: num,
     drive: function(distance){
-      this.odometer = num + distance;
-      return this.odometer;
+      return this.odometer += distance;
+      
     }
   }
+   
+
+  // let mile = {
+  //   odometer: num,
+  //   drive: function(distance){
+  //     return (this.odometer + distance);
+  //   }
+  // }
+
+  
 }
 
 /// ////// END OF CHALLENGE /////////
